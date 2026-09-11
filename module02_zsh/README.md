@@ -17,3 +17,5 @@
 | python 3   | Launches the python3 interpretor                              |
 ## AI Use Statement
 I did not use AI for this lab.
+
+## Week 3: Virtual Environments and .zshrc
