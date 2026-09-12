@@ -14,29 +14,32 @@
 | tree       | Displays files and folders as a branching tree diagram        |
 | mv         | To move                                                       |
 | cp         | To copy                                                       |
-| python 3   | Launches the python3 interpretor                              |
+| python3    | Launches the python3 interpretor                              |
 ## AI Use Statement
 I did not use AI for this lab.
 
 ## Week 3: Virtual Environments and .zshrc
 ## Commands Practiced
-| Command    | What it does                                                  |
-| python3 -m venv .venv
-| source .venv/bin/activate
-| which python3
-| pip install pytest ruff
-| pip list
-| pip freeze > requirements.txt
-| source ~/.zshrc
-| pytest --collect-only
-| deactivate
-| alias ll='ls -la'
-| alias c='clear'
-| alias py='python3'
-| alias gs='git status'
-| alias ga='git add .'
-| alias gcmsg='git commit -m'
-| alias gp='git push'
-| alias gl='git log --oneline'
-| alias tree2='tree -L 2'
-| mkcd () { mkdir -p "$1" && cd "$1" }
+| Command                               | What it does                                                                                      |
+|---------------------------------------|---------------------------------------------------------------------------------------------------|
+| python3 -m venv .venv                 | Creates an isolated python virtual environment called .venv in the current directory              |
+| source .venv/bin/activate             | Activates the virtual environment, switching the shell to use specific Python interpreters and packages |
+| which python3                         | Displays the precise file path of the active Python executable being used in the terminal         |
+| pip install pytest ruff               | Downloads/installs the pytest and ruff packages into the active environment                       |
+| pip list                              | Displays a list of all Python packages installed                                                  |
+| pip freeze > requirements.txt         | Saves a list of all currently installed Python packages and their versions into a file            |
+| source ~/.zshrc                       | Reloads the zsh configuration to apply any recent edits/aliases                                   |
+| pytest --collect-only                 | Lists all discovered test cases without executing                                                 |
+| deactivate                            | Exits the virtual environment and restores the terminal to the global Python                      |
+| alias ll='ls -la'                     | Alias shortcut to list all files and directories, including hidden ones                           |
+| alias c='clear'                       | Alias shortcut to clear the current terminal output                                               |
+| alias py='python3'                    | Alias shortcut to launch the python3 interpretor                                                  |
+| alias gs='git status'                 | Alias shortcut to display the working tree status of the Git repository                           |
+| alias ga='git add .'                  | Alias shortcut to stage all current changes and untracked files for the next commit               |
+| alias gcmsg='git commit -m'           | Alias shortcut to commit staged changes with a commit message                                     |
+| alias gp='git push'                   | Alias shortcut to upload local repository commits to the tracking branch                          |
+| alias gl='git log --oneline'          | Alias shortcut to display the commit history in a single line format                              |
+| alias tree2='tree -L 2'               | Alias shortcut to display a directory tree visualization                                          |
+| mkcd () { mkdir -p "$1" && cd "$1" }  | Creates a new directory path if nonexistant and immediately enters it                             |
+## AI Use Statement
+I did not use AI for this lab.
